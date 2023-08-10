@@ -1,2 +1,5 @@
 #!/bin/bash
-gcc -S "$SOMEVAR"
+gcc -S $CFILE -o ·echo $CFILE | cut -d. -f1·.s
+
+
+
