@@ -3,7 +3,6 @@
 #include <stdlib.h>
 /**
  * array_range - creates an array of integers
- * 
  * @min: min input
  * @max: max input
  * Return: pointer to new arr of ints
