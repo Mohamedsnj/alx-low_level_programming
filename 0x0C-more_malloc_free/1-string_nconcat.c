@@ -2,9 +2,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * string_nconcat - concatenates two strings 
- * 
- * 
+ * string_nconcat - concatenates two strings
  *
  * @s1: first string
  * @s2: second string
