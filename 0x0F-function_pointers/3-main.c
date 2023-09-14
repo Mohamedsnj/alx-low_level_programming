@@ -3,10 +3,11 @@
 #include <stdlib.h>
 
 /**
-* main - Prints the result of simple operations.
+* main - Prints the result of simple operations
 * @argc: The number of arguments 
-* @argv: An array of pointers to the arguments.
 *
+*
+* @argv: An array of pointers to the arguments.
 * Return:  0.
 */
 
