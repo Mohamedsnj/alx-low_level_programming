@@ -4,7 +4,6 @@ void _constructor(void) __attribute__ ((constructor));
 
 /**
  * _constructor - extcutes before the main
- * 
  * return: void
  */
 void _constructor(void)
