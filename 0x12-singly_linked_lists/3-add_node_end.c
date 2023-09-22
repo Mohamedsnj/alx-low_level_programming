@@ -10,7 +10,7 @@ int len(const char *str)
 {
 	int i;
 
-	if (!str)
+	if (str == NULL)
 		return (0);
 	for (i = 0; str[i] != '\0'; i++)
 		;
@@ -18,10 +18,10 @@ int len(const char *str)
 }
 
 /**
- * add_node_end -  adds a new node at the end of a list_t list.
+ * add_node_end - Function that adds a new node at the end of a list_t list.
  *
- * @head:  the input linked list
- * @str:  the string take in my linked list.
+ * @head: This is the input linked list
+ * @str: This is the string take in my linked list.
  *
  * Return: the address of the new element, or NULL if it failed.
  */
@@ -39,13 +39,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->str = strdup(str);
 	new_node->len = len(str);
 	new_node->next = NULL;
-	if (*head == NULL)
+	if (!*head)
 	{
 		*head = new_node;
 		return (*head);
 	}
-	while (node->next != NULL)
-		node = node->next;
-	last->next = new_node;
+	while (node->next)
+	node = node->next;
+	node->next = new_node;
 	return (*head);
 }
