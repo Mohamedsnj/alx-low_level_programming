@@ -8,9 +8,15 @@
  **/
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *node;
-	unsigned int cnt;
+	listint_t *node = head;
+	unsigned int n = 0;
 
-	for (node = head, n = 0; node && cnt < index; node = node->next, n++)
-		;
-	return (node);
+	while (node && n != index)
+	{
+		n++;
+		node = node->next;
+	}
+	if (node && n == index)
+		return (node);
+	return (NULL);
+}
